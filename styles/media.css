@@ -1,0 +1,36 @@
+@media (min-width: 600.1px) and (max-width: 900px) {
+  body {
+    padding: 6rem;
+  }
+}
+@media (min-width: 900.1px) {
+  body {
+    padding: 4rem;
+    place-content: center;
+  }
+  main {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-columns: min-content;
+    gap: 2rem;
+  }
+  
+.left {
+  display: grid;
+  gap: 2rem;
+}
+.left-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+.left-bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+.right {
+  display: grid;
+}
+}

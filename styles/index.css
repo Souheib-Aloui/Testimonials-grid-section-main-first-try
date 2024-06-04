@@ -1,0 +1,134 @@
+
+/* Resets */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root {
+
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --Verydark-grayish-blue: hsl(217, 19%, 35%);
+  --Verydark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --Lightgray: hsl(0, 0%, 81%);
+  --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* General Css */
+body {
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--Light-grayish-blue);
+  padding: 1.5rem;
+  display: grid;
+  place-content: center;
+  gap: 4rem;
+}
+main {
+  display: grid;
+  gap: 2rem;
+}
+.left {
+  display: grid;
+  gap: 2rem;
+}
+.left-top {
+  display: grid;
+  gap: 2rem;
+}
+.left-bottom {
+  display: grid;
+  gap: 2rem;
+}
+
+article {
+  padding: 2rem;
+  display: grid;
+  gap: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 3px 8px var(--Verydark-grayish-blue);
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+article img {
+  width: 34px;
+  border-radius: 50%;
+  border: 2px solid ;
+}
+
+.flex-grp {
+  display:grid;
+  gap: 2px;
+}
+
+.status {
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.67rem;
+  line-height: 1.1;
+}
+.text {
+  opacity: 0.7;
+  line-height: 1.2;
+  font-size: 1.15rem;
+  
+}
+
+.bg-violet {
+  background-color: var(--Moderate-violet);
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top 0 right 2rem;
+  background-size: 108px;
+}
+.bg-violet img,
+.bg-gray img,
+.bg-whiteshort img  {
+  border-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.bg-violet ,
+.bg-gray,
+.bg-dark {
+  color: var(--White);
+}
+
+
+
+.bg-gray {
+  background-color: var(--Verydark-grayish-blue);
+}
+
+.bg-whiteshort,
+.bg-whitelong  {
+  background-color: var(--White);
+}
+.bg-whiteshort,
+.bg-whitelong {
+  color: var(--Verydark-grayish-blue);
+}
+
+.bg-dark {
+  background-color: var(--Verydark-blackish-blue);
+}
+.bg-dark img{
+  border-color: var(--Moderate-violet);
+}
